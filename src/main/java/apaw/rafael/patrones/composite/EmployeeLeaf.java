@@ -5,17 +5,14 @@ import apaw.rafael.patrones.Employee;
 public class EmployeeLeaf extends EmployeeComponent {
     private Employee employee;
 
-    public EmployeeLeaf(String name,Employee employee) {
-        super(name);
-        this.employee=employee;
+    public EmployeeLeaf(Employee employee) {
+
+        this.employee = employee;
     }
 
-   
     public long view() {
         return employee.getId();
     }
-
-   
 
     @Override
     public void add(EmployeeComponent employeeComponent) {
