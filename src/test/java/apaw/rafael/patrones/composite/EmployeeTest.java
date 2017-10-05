@@ -21,7 +21,7 @@ public class EmployeeTest {
     public void before() {
         this.employee1 = new EmployeeBuilder().id(56756).surname("Rafael").build();
 
-        this.employeeLeaf1 = new EmployeeLeaf("Empleado1", employee1);
+        this.employeeLeaf1 = new EmployeeLeaf(employee1);
 
         this.employeeComposite = new EmployeeCompisite("empleados");
     }

@@ -6,13 +6,23 @@ import java.util.List;
 public class EmployeeCompisite extends EmployeeComponent {
     List<EmployeeComponent> employeeComponentList;
 
+    private String name;
+
     public EmployeeCompisite(String name) {
-        super(name);
+        this.name = name;
         employeeComponentList = new ArrayList<>();
     }
 
     public String name() {
         return this.getName();
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     @Override
