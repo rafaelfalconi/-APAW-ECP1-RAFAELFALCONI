@@ -24,7 +24,7 @@ public class EmployeeBuilderTest {
         String date = String.valueOf(employee.getEntry().get(Calendar.DAY_OF_MONTH)) + "/"
                 + String.valueOf(employee.getEntry().get(Calendar.MONTH) + 1) + "/"
                 + String.valueOf(employee.getEntry().get(Calendar.YEAR));
-        assertEquals("5/10/2017", date);
+        assertEquals("3/10/2017", date);
         assertEquals(false, employee.getActive());
     }
 
